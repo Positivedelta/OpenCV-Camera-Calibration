@@ -18,7 +18,8 @@ To install the application use:
 make install
 ```
 
-The default install path is `bit-parallel/bin/camera`, edit `CMakeLists.txt` to change this to something more useful
+- The default install path is `bit-parallel/bin/camera`
+- Edit `CMakeLists.txt` to change this to something more useful
 
 #### Execute
 ```
@@ -28,6 +29,7 @@ The default install path is `bit-parallel/bin/camera`, edit `CMakeLists.txt` to 
 ```
 
 - You must create an image capture directory before performing a calibration
-- Use the `-d` option to delete the contents of the image capture directory
+- Use the `-d` option to delete the contents of the image capture directory before performing a new calibration
 - Use the `-t` option to test the resulting calibration using a live camera feed
 - The resulting calibration data is stored in `calibration.xml` in the current directory
+- The `calibration.xml` file is saved in matrix format and is compatible OpenCV, see `src/` for an example
